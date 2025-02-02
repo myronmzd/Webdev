@@ -1,0 +1,21 @@
+{
+	"name": "JMeter and Nginx Dev Container",
+	"image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+	"features": {
+	  "ghcr.io/devcontainers-extra/features/jmeter-sdkman:2": {
+		"version": "latest",
+		"jdkVersion": "17",
+		"jdkDistro": "oracle"
+	  }
+	},
+	"postCreateCommand": [
+	  "sudo apt-get update",
+	  "sudo apt-get install -y nginx",
+	  "sudo systemctl start nginx"
+	],
+	"forwardPorts": [80],
+	"mounts": [
+	  "source=${workspaceFolder}/nginx.conf,target=/etc/nginx/nginx.conf,type=bind"
+	]
+  }
+  
