@@ -9,12 +9,12 @@
 	  }
 	},
 	"postCreateCommand": [
-	  "sudo apt-get update",
-	  "sudo apt-get install -y nginx",
+	  "sudo DEBIAN_FRONTEND=noninteractive apt-get update",
+	  "sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nginx",
 	  "sudo service nginx start",
 	  "sudo service nginx status"
 	],
-	"forwardPorts": [80],
+	"forwardPorts": [8080],
 	"mounts": [
 	  "source=${workspaceFolder}/nginx.conf,target=/etc/nginx/nginx.conf,type=bind"
 	]
