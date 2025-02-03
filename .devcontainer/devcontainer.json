@@ -11,7 +11,8 @@
 	"postCreateCommand": [
 	  "sudo apt-get update",
 	  "sudo apt-get install -y nginx",
-	  "sudo systemctl start nginx"
+	  "sudo service nginx start",
+	  "sudo service nginx status"
 	],
 	"forwardPorts": [80],
 	"mounts": [
