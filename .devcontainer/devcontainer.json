@@ -14,7 +14,7 @@
 	  "sudo service nginx start",
 	  "sudo service nginx status"
 	],
-	"forwardPorts": [8080],
+	"forwardPorts": [80],
 	"mounts": [
 	  "source=${workspaceFolder}/nginx.conf,target=/etc/nginx/nginx.conf,type=bind"
 	]

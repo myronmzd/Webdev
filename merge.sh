@@ -3,7 +3,7 @@
 
 sudo service nginx status
 
-sudo cp /workspaces/Webdev/test.html /usr/share/nginx/html/
+sudo cp /workspaces/Webdev/test.html /var/www/html
 
 #!/bin/bash
 
