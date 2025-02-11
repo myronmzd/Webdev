@@ -1,0 +1,22 @@
+tasks:
+  - name: Nginx
+    before: |
+        # Update package list and install Nginx
+        sudo apt-get update
+        sudo apt-get install -y nginx
+        
+        # Stop Nginx service to modify content
+        sudo service nginx stop
+
+        # Copy your custom index.html to the default Nginx path
+        sudo rm -rf /usr/share/nginx/html/*
+        sudo cp ${GITPOD_REPO_ROOT}/text.html /usr/share/nginx/html/
+
+        # Open port 80 for public access
+        sudo sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
+        
+        # Start Nginx in the foreground
+        sudo service nginx start
+ports:
+  - port: 80
+    onOpen: open-browser
