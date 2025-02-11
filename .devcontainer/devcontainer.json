@@ -10,13 +10,16 @@
 	},
 	"postCreateCommand": [
 	  "sudo DEBIAN_FRONTEND=noninteractive apt-get update",
-	  "sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nginx",
-	  "sudo service nginx start",
-	  "sudo service nginx status"
+	  "sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nginx"
 	],
 	"forwardPorts": [80],
 	"mounts": [
 	  "source=${workspaceFolder}/nginx.conf,target=/etc/nginx/nginx.conf,type=bind"
-	]
+	],
+	"runArgs": [
+	  "--cap-add=SYS_ADMIN",
+	  "--privileged"
+	],
+	"postStartCommand": "nginx -g 'daemon off;'"
   }
   
