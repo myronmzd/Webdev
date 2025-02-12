@@ -1,24 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-
-  <title>Bold</title> 
-
-</head>
-
-<body>
+  <head>
+    <title>This is the title of the webpage!</title>
+    <link rel="Icon" href="https://cdn-icons-png.flaticon.com/512/5602/5602732.png">
+  </head>
+  <style>
+    table {
+        width: 60%;
+        border-collapse: collapse; /* Ensures borders don’t double up */
+    }
+    th, td {
+        border: 1px solid black; /* Adds a black border around cells */
+        padding: 2px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+  <body>
+  <pre>
+      This is an example paragraph. Anything in the <strong>body</strong> 
+      tag will appear on the page, just like this <strong>p</strong> 
+      tag and its contents.Yes, in AWS Step Functions, you often need to create the necessary 
+      AWS resources before defining and orchestrating workflows.
+      The type of resources you create depends on your use case. Here's a typical approach:
   
-  Hello world 
-  <h1>heard one </h1>
-  <h2>heard two </h2>
-  <h3>heard three </h3>
 
-  <a href="https://x.com/home" target="_blank">
-   
-<img src="C:\Users\Myron\Pictures\Jesus.png" height="200" width="400" />
+  <a href="https://x.com/home">Click this link</a>
 
+  <b>this is bold</b> <strong>and this is strong</strong> 
+ 
+  <i>this is italic</i> 
+
+  <em> and this is emphasized</em>
+
+  mark this <mark>Marked</mark> 
   
-</body>
+  don't press this <del>button</del>
 
+  <ins>press this button </ins>
+
+  <small>small text</small>
+  
+  H<sub>2</sub>O
+
+  2<sup>2</sup>=4
+
+  <h1 style="color: darkblue;background-color:red ;">Heading 1</h1>
+  
+  <a href="https://x.com/home" target="_blank">New tab link</a>
+
+  <a href="/home" target="_blank">click to goto home page of website</a>
+
+  <a href="mailto:myronmzd22@gmail.com" target="_blank">click link to send mail</a>
+
+  <table>
+    <th>Category</th>
+    <th>AWS</th>
+    <th>Azure</th>
+    <tr>
+      <td>Compute</td>
+      <td>EC2</td>
+      <td>VM</td>
+    </tr>
+    <tr>
+      <td>Container Services</td>
+      <td>ECS, EKS, Fargate</td>
+      <td>AKS, Container Instance</td>
+    </tr>
+    <tr>
+      <td>Serverless</td>
+      <td>Lambda</td>
+      <td>Azure Functions</td>
+    </tr>
+    <tr>
+      <td>Storage</td>
+      <td>S3, EFS, FSx, Glacier</td>
+      <td>Blob Storage, Files, Disks</td>
+    </tr>
+    <tr>
+      <td>Databases</td>
+      <td>RDS, DynamoDB, Aurora</td>
+      <td>SQL Database, Cosmos DB</td>
+    </tr>
+    <tr>
+      <td>Networking</td>
+      <td>VPC, Route 53, ELB</td>
+      <td>VNet, Azure DNS, Load Balancer</td>
+    </tr>
+    <tr>
+      <td>IAM & Security</td>
+      <td>IAM, KMS, AWS Shield</td>
+      <td>Azure AD, Key Vault, Defender</td>
+    </tr>
+    <tr>
+      <td>Monitoring & Logging</td>
+      <td>CloudWatch, CloudTrail</td>
+      <td>Azure Monitor, Log Analytics</td>
+    </tr>
+    <tr>
+      <td>Big Data & Analytics</td>
+      <td>EMR, Glue, Athena</td>
+      <td>HDInsight, Synapse, Data Factory</td>
+    </tr>
+    <tr>
+      <td>AI & ML</td>
+      <td>SageMaker, Rekognition</td>
+      <td>Azure ML, Cognitive Services</td>
+    </tr>
+  </table>
+  <ul>
+    <li>rule 1</li>
+    <li>rule 2</li>
+    <li>rule 3</li>
+  </ul>
+  <ol>
+    <li>rule 1</li>
+    <li>rule 2</li>
+    <li>rule 3</li>
+  </ol>
+  <dl>
+    <dt>rule 1</dt>
+    <dd>description 1</dd>
+    <dt>rule 2</dt>
+    <dd>description 2</dd>
+    <dt>rule 3</dt>
+    <dd>description 3</dd>
+  </dl>
+  <div style="background-color: lightblue; color: darkblue; padding: 10px; margin: 10px;">
+    <h2>Div tag</h2>
+    <p>This is a div tag. It is used to group elements together. It can be styled using CSS.</p>
+  </div>
+  <div style="background-color: lightgreen; color: darkgreen; padding: 10px; margin: 10px;">
+    <h2>Div tag</h2>
+    <p>This is another div tag. It is used to group elements together. It can be styled using CSS.</p>
+  </div>
+  <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" width="560" height="315"></iframe>
+  <p>this is a sign &euro; &#169; </p>
+  <form action="/submit.html" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" placeholder="Enter your name" id="name" >
+      <input type="email" name="email" placeholder="Enter your email">
+      <input type="number" name="age" placeholder="Enter your age">
+      <input type="submit" value="Submit">
+      <label>School</label>
+      <input type="checkbox" name="school" value="1">School 1
+      <input type="checkbox" name="school" value="2">School 2
+      <input type="radio" name="school" value="3">School 3
+      <input type="submit" value="Submit">
+
+  </form>
+</pre>
+  </body>
 </html>
+
+<!-- docker cp indix.html webhost:/usr/share/nginx/html/index.html -->
