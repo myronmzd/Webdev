@@ -1,0 +1,76 @@
+*{
+    color: #36180f;
+}
+
+body {
+    background-color: #caf7fa;
+    padding: 20px;
+  }
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid #030303;
+    font-family: Arial, sans-serif;
+    max-width: 50%;
+}
+
+tr:first-child {
+    background-color: #16e182;
+}
+td:first-child {
+    background-color: #16e182;
+    color: rgb(4, 4, 4);
+    border : solid #1b5637;
+  }
+td:nth-child(2) {
+    background-color: #ffa60b;
+    color: rgb(0, 0, 0);
+    border: solid #030303;
+}
+td:nth-child(3) {
+    background-color: #0bbaff;
+    color: rgb(0, 0, 0);
+    border: solid #030303;
+}
+
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darkgreen;
+    
+  }
+
+iframe {
+    margin-left: 250px;
+    width: 60%;
+    height: 500px;
+    border: none;
+  }
+
+form{
+    margin: 0px 250px 0px 550px
+}
+
+para{
+    margin: 0px 250px 0px 550px;
+    font-style: sans-serif;
+}
+
+
+  /* tr td:nth-child(1) {
+    background-color: #070a5c;
+    color: white;
+  }  we can use this also
+   */
+
+/* docker cp indix.html webhost:/usr/share/nginx/html/index.html */
+/* docker cp style.css webhost:/usr/share/nginx/html/style.css */
