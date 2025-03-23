@@ -1,0 +1,38 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Distribution/packaging
+build/
+dist/
+*.egg-info/
+
+# Logs and database files
+*.log
+*.sqlite3
+*.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+.coverage
+.tox/
+nosetests.xml
+pytest_cache/
+
+# Cache
+.cache/
+pip-wheel-metadata/
