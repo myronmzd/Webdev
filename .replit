@@ -1,0 +1,16 @@
+modules = ["nodejs-20", "python-3.11", "python3", "web"]
+
+# Default command to run the application
+run = "python3 app.py"
+
+# Nix package channel (stable recommended)
+[nix]
+channel = "stable-24_05"
+
+# Deployment-specific configuration
+[deployment]
+run = ["sh", "-c", "pip install -r requirements.txt && python3 app.py"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
